@@ -55,7 +55,7 @@ public class App extends BaseApplication {
 }
 ```
 目前暂时只支持`Application`类型，后期考虑增加`Activity`的支持，因为有些初始化可以延后放到启动页或首页来做。目前可以用延时策略替代。
-### 引入方式
+## 引入方式
 首先，在项目根目录的 `build.gradle `文件中增加以下内容：
 ```
 buildscript {
@@ -83,4 +83,26 @@ apply plugin: 'com.android.application'
 // apply plugin: 'com.android.library'
 apply plugin: 'initiator'
 ```
+## 混淆
+```
+-keep class com.renny.mylibrary.*
+-keepclassmembers class com.renny.mylibrary.**{
+    *;
+}
 
+```
+## LICENSE
+
+    Copyright (c) 2016-present, SateState Contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
