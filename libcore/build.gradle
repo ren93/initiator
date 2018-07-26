@@ -1,0 +1,32 @@
+apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'maven'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+//打包到本地或者远程Maven库
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = 'com.renny.initiator'
+            pom.artifactId = 'annotation'
+            pom.version = '1.0.8'
+            repository(url: uri('../repo'))
+        }
+    }
+}
+
+
+publish {
+    userOrg = 'renjianan'
+    groupId = 'com.renny.initiator'
+    artifactId = 'annotation'
+    publishVersion = '1.0.8'
+    desc = 'init for your application automatically'
+    website = 'https://github.com/renjianan/initiator'
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.renny.initiator</groupId>
+  <artifactId>engine</artifactId>
+  <versioning>
+    <release>1.0.8</release>
+    <versions>
+      <version>1.0.1</version>
+      <version>1.0.5</version>
+      <version>1.0.6</version>
+      <version>1.0.8</version>
+    </versions>
+    <lastUpdated>20180726025431</lastUpdated>
+  </versioning>
+</metadata>
