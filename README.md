@@ -1,4 +1,4 @@
-# initiator
+# Initiator
 Android应用初始化工具
 
 ## 如何使用
@@ -29,7 +29,7 @@ public @interface AppInit {
 }
 ```
 
-采用编译期注解，不适用反射，代码在编译时生成，对最终程序运行性能影响很小。最终我们的代码可能如下：
+采用编译期注解，代码在编译时生成，不使用反射，对最终程序运行性能影响很小。最终我们的代码可能如下：
 ```java
 @AppInit(priority = 22, delay = 1740, onlyInDebug = true)
 public class PushInit implements IAppInit {
