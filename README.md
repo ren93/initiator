@@ -1,4 +1,8 @@
 # Initiator
+
+
+[ ![Download](https://api.bintray.com/packages/renjianan/maven/plugin/images/download.svg) ](https://bintray.com/renjianan/maven/plugin/_latestVersion)
+
 Android应用初始化工具
 
 ## 如何使用
@@ -62,7 +66,7 @@ buildscript {
         maven { url 'https://dl.bintray.com/renjianan/maven'}
     }
     dependencies {
-         classpath 'com.renny.initiator:plugin:'${latest_version}"//目前最新版：1.0.8
+         classpath 'com.renny.initiator:plugin:'${latest_version}"
     }
 }
 allprojects {
