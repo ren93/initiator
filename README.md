@@ -58,24 +58,10 @@ public class App extends BaseApplication {
 ## 引入方式
 首先，在项目根目录的 `build.gradle `文件中增加以下内容：
 ```
-buildscript {
-
-    repositories {
-        google()
-        jcenter()
-        maven { url 'https://dl.bintray.com/renjianan/maven'}
-    }
     dependencies {
          classpath 'com.renny.initiator:plugin:'${latest_version}"
     }
-}
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        maven { url 'https://dl.bintray.com/renjianan/maven'}
-    }
-}
+
 ```
 然后，在 `application` 或 `library` 模块的` build.gradle` 文件中应用插件：
 ```java
